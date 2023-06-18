@@ -1,9 +1,9 @@
 
 SELECT p.Name, c.Name
 FROM Products p
--- Используем LEFT JOIN для связи таблицы Products с таблицей ProductCategory
+-- Using LEFT JOIN to join the Products table with the ProductCategory table
 LEFT JOIN ProductCategory pc 
 ON p.Id = pc.ProductId
--- Используем LEFT JOIN для связи таблицы ProductCategory с таблицей Categories
+-- Using LEFT JOIN to join the ProductCategory table with the Categories table
 LEFT JOIN Categories с
 ON pc.CategoryId = c.Id;
