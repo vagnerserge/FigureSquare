@@ -1,10 +1,10 @@
 ﻿using Shapes;
 
+Console.WriteLine("------------Создание фигур и вычисление площади фигуры в try-catch-----------------------");
 try
 {
     Circle circle = new (5);
-    double circleArea = circle.CalculateArea();
-    Console.WriteLine($"Площадь круга: {circleArea}");
+    Console.WriteLine($"Площадь круга: {circle.CalculateArea():F3}");
 }
 catch (ArgumentException ex)
 {
@@ -14,14 +14,15 @@ catch (ArgumentException ex)
 try
 {
     Triangle triangle = new (3, 4, 5);
-    double triangleArea = triangle.CalculateArea();
-    Console.WriteLine($"Площадь треугольника: {triangleArea}");
+    Console.WriteLine($"Площадь треугольника: {triangle.CalculateArea():F3}");
 }
 catch (ArgumentException ex)
 {
     Console.WriteLine("Ошибка при создании треугольника" + ex.Message);
 }
+Console.WriteLine("------------------------------------------------------------------------------------------\n");
 
+Console.WriteLine("------------Вычисление площади фигуры без знания типа фигуры в compile-time----------------");
 
 List<Shape> Figures = new()
 {
@@ -34,16 +35,18 @@ foreach (Shape figure in Figures)
 {
     if (figure is Circle c)
     {
+        ;
         Console.WriteLine($"Площадь круга: {c.CalculateArea()}\n");
     }
     else if (figure is Triangle t)
     {
-        Console.WriteLine($"Площадь треугольника: {t.CalculateArea()}\n");
-        Console.WriteLine($"Треугольник {(t.IsRightTriangle() ? "" : "не")}прямоугольный");
+        Console.WriteLine($"Площадь треугольника: {t.CalculateArea()}");
+        Console.WriteLine($"Треугольник {(t.IsRightTriangle() ? "" : "не")}прямоугольный\n");
     }
     else if (figure is Rectangle r)
     {
-        Console.WriteLine($"Площадь прямоугольника: {r.CalculateArea()}\n");
+        Console.WriteLine($"Площадь прямоугольника: {r.CalculateArea()}");
         Console.WriteLine($"Прямугольник - {(r.IsSquare() ? "" : "не ")}квадрат");
     }
 }
+Console.WriteLine("------------------------------------------------------------------------------------------\n");

@@ -3,14 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FigureSquare", "FigureSquare\FigureSquare.csproj", "{3C46A199-39FC-4F8D-9177-3F01665C6613}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FigureSquare", "FigureSquare\FigureSquare.csproj", "{3C46A199-39FC-4F8D-9177-3F01665C6613}"
 	ProjectSection(ProjectDependencies) = postProject
 		{8D411568-58FF-477D-BAA8-EAB7FBDD5581} = {8D411568-58FF-477D-BAA8-EAB7FBDD5581}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes", "Shapes\Shapes.csproj", "{8D411568-58FF-477D-BAA8-EAB7FBDD5581}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes", "Shapes\Shapes.csproj", "{8D411568-58FF-477D-BAA8-EAB7FBDD5581}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shapes.Tests", "Shapes.Tests\Shapes.Tests.csproj", "{2BE377AE-DD62-4742-B94B-0CA663822B29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shapes.Tests", "Shapes.Tests\Shapes.Tests.csproj", "{2BE377AE-DD62-4742-B94B-0CA663822B29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D99D3A0F-F9C5-4C89-9EF1-9DF86A39FA98}"
+	ProjectSection(SolutionItems) = preProject
+		Product-Category.sql = Product-Category.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
