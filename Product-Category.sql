@@ -5,5 +5,5 @@ FROM Products p
 LEFT JOIN ProductCategory pc 
 ON p.Id = pc.ProductId
 -- Using LEFT JOIN to join the ProductCategory table with the Categories table
-LEFT JOIN Categories ñ
+LEFT JOIN Categories c
 ON pc.CategoryId = c.Id;
