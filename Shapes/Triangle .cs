@@ -36,6 +36,8 @@ namespace Shapes
             return Math.Sqrt(semiPerimeter * (semiPerimeter - side1) * (semiPerimeter - side2) * (semiPerimeter - side3));
         }
 
+        public override string Name => "Треугольник";
+
         public bool IsRightTriangle()
         {
             // Проверяем, является ли треугольник прямоугольным по теореме Пифагора

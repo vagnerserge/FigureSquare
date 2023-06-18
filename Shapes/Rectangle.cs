@@ -25,6 +25,7 @@ namespace Shapes
         {
             return length * width;
         }
+        public override string Name => "Прямоугольник";
 
         public bool IsSquare()
         {

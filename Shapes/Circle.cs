@@ -23,5 +23,6 @@ namespace Shapes
         {
             return Math.PI * radius * radius;
         }
+        public override string Name => "Круг";
     }
 }
