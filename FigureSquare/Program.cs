@@ -6,7 +6,7 @@ try
     double circleArea = circle.CalculateArea();
     Console.WriteLine($"Площадь круга: {circleArea}");
 }
-catch (AggregateException ex)
+catch (ArgumentException ex)
 {
     Console.WriteLine("Ошибка при создании треугольника" + ex.Message);
 }
@@ -17,7 +17,7 @@ try
     double triangleArea = triangle.CalculateArea();
     Console.WriteLine($"Площадь треугольника: {triangleArea}");
 }
-catch (AggregateException ex)
+catch (ArgumentException ex)
 {
     Console.WriteLine("Ошибка при создании треугольника" + ex.Message);
 }
