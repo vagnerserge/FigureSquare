@@ -38,12 +38,12 @@ foreach (Shape figure in Figures)
     }
     else if (figure is Triangle t)
     {
-        Console.WriteLine($"Площадь треугольника: {t.CalculateArea}\n");
+        Console.WriteLine($"Площадь треугольника: {t.CalculateArea()}\n");
         Console.WriteLine($"Треугольник {(t.IsRightTriangle() ? "" : "не")}прямоугольный");
     }
     else if (figure is Rectangle r)
     {
-        Console.WriteLine($"Площадь прямоугольника: {r.CalculateArea}\n");
+        Console.WriteLine($"Площадь прямоугольника: {r.CalculateArea()}\n");
         Console.WriteLine($"Прямугольник - {(r.IsSquare() ? "" : "не ")}квадрат");
     }
 }
