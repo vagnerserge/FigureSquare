@@ -28,7 +28,6 @@ namespace Shapes
 
         public bool IsSquare()
         {
-            // Проверяем, является ли треугольник прямоугольным по теореме Пифагора
             return length == width;
         }
     }

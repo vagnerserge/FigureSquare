@@ -8,7 +8,7 @@ namespace Shapes
 {
     public class Circle : Shape
     {
-        private readonly double radius;  // сделать проверку на отрицательность числа и выдавать сообщение в setter
+        private readonly double radius;
 
         public Circle(double radius)
         {
@@ -17,7 +17,7 @@ namespace Shapes
                 throw new ArgumentException("Значение радиуса круга должно быть больше нуля.");
             }
 
-            this.radius = radius; // здесь сделать проверку на положительность
+            this.radius = radius;
         }
         public override double CalculateArea()
         {
